@@ -1,3 +1,51 @@
+body {
+  background-color: #dfe1ee;
+}
+
+.trs1 {
+  transition: all 0.2s;
+}
+
+.h25px {
+  height: 25px;
+}
+
+.w25px {
+  width: 25px;
+}
+
+.h30px {
+  height: 30px;
+}
+
+.w30px {
+  width: 30px;
+}
+
+.h50px {
+  height: 50px;
+}
+
+.w50px {
+  width: 50px;
+}
+
+.h200px {
+  height: 200px;
+}
+
+.h300px {
+  height: 300px;
+}
+
+.w300px {
+  width: 300px;
+}
+
+.w400px {
+  width: 400px;
+}
+
 .bg-fb1 {
   background-color: #3b5998;
 }
@@ -60,40 +108,4 @@
 
 .text-fb8 {
   color: #2b3c63;
-}
-
-.h25px {
-  height: 25px;
-}
-
-.w25px {
-  width: 25px;
-}
-
-.h30px {
-  height: 30px;
-}
-
-.w30px {
-  width: 30px;
-}
-
-.h50px {
-  height: 50px;
-}
-
-.w50px {
-  width: 50px;
-}
-
-.h200px {
-  height: 200px;
-}
-
-.h300px {
-  height: 300px;
-}
-
-.w400px {
-  width: 400px;
 }/*# sourceMappingURL=pageFacebook.css.map */
