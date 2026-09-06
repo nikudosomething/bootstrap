@@ -1,4 +1,5 @@
 {
+  "editor.tabCompletion": "onlySnippets",
   "liveSassCompile.settings.formats": [
     {
       "format": "expanded",
