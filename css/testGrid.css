@@ -1,0 +1,13 @@
+html, body {
+  height: 100%;
+}
+
+.box {
+  background-color: #80f7cf;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.box2 {
+  height: 100px;
+}/*# sourceMappingURL=testGrid.css.map */
