@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flickr仿製</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./css/pageContent.css">
+  </head>
+  <body>
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-sm bg-body-tertiary sticky-top"data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Flickr</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-current="page" href="#">
+                發掘
+              </a>
+              <div class="dropdown-menu">
+                123
+              </div>
+            </li>
+            
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- header -->
+    <header class="h250px bg-dark-subtle header-bg2 grad1 ">
+      <div class="container h-100 d-flex gap-2 align-items-end pb-2 text-white z-1 position-relative ">
+        <div class="img-head w100px h100px overflow-hidden rounded-circle">
+          <img class="h100px w100px object-fit-cover" src="https://randomuser.me/api/portraits/women/76.jpg" alt="">
+        </div>
+        <div class="user-info ">
+          <div class="name fs-1">Alice Jimenez</div>
+          <div class="info"><i class="fa-solid fa-gift"></i><span> 贈送Pro</span></div>
+        </div>
+        <div class="num-photo ms-auto">25張相片</div>
+        <div class="num-year ">已加入2013</div>
+      </div>
+    </header>
+
+    <!-- 次導覽列 -->
+    <aside class="bg-white border-bottom sticky-top t50px">
+      <div class="container">
+        <ul class="nav">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#item1">關於</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="#item2">所有相片</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#item3">相簿</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#item4">最愛 </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#item5">博覽館</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#item6">群組</a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+
+    <main class="bg-body-tertiary">
+      <div class="container">
+        <div class="row">
+          <div class="d-flex justify-content-end mt-3">
+            <i class="fa-solid fa-magnifying-glass fs-3"></i>
+            <i class="fa-brands fa-square-youtube fs-3"></i>
+            <i class="fa-solid fa-share fs-3"></i>
+          </div>
+        </div>
+
+        <div class="row row-cols-4 g-2 my-2">
+          <div class="cols">
+            <div class="card h300px overflow-hidden">
+              <img class="w-100 h-100 object-fit-cover" src="https://images.pexels.com/photos/29372969/pexels-photo-29372969.jpeg" alt="">
+            </div>
+          </div>
+          <div class="cols">
+            <div class="card h300px"></div>
+          </div>
+          <div class="cols">
+            <div class="card h300px"></div>
+          </div>
+          <div class="cols">
+            <div class="card h300px"></div>
+          </div>
+          <div class="cols">
+            <div class="card h300px">
+              <div class="card-body">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Launch demo modal
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="cols">
+            <div class="card h300px">
+              <div class="card-body">
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                  Button with data-bs-target
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="cols">
+            <div class="card h300px"></div>
+          </div>
+          <div class="cols">
+            <div class="card h300px"></div>
+          </div>
+          <div class="cols">
+            <div class="card h300px"></div>
+          </div>
+          <div class="cols">
+            <div class="card h300px"></div>
+          </div>
+          <div class="cols">
+            <div class="card h300px"></div>
+          </div>
+          <div class="cols">
+            <div class="card h300px"></div>
+          </div>
+          <div class="cols">
+            <div class="card h300px"></div>
+          </div>
+          <div class="cols">
+            <div class="card h300px"></div>
+          </div>
+          <div class="cols">
+            <div class="card h300px"></div>
+          </div>
+          <div class="cols">
+            <div class="card h300px"></div>
+          </div>
+          <div class="cols">
+            <div class="card h300px"></div>
+          </div>
+          <div class="cols">
+            <div class="card h300px"></div>
+          </div>
+          <div class="cols">
+            <div class="card h300px"></div>
+          </div>
+          <div class="cols">
+            <div class="card h300px"></div>
+          </div>
+          
+        </div>
+      </div>
+    </main>
+
+
+    <footer class="bg-dark">
+      <div class="container ">
+        <nav class="nav border-bottom justify-content-between ">
+          
+          <a class="nav-link text-white" href="#">關於</a>
+          <a class="nav-link text-white" href="#">工作機會</a>
+          <a class="nav-link text-white" href="#">Blog</a>
+          <a class="nav-link text-white" href="#">登廣告</a>
+          <a class="nav-link text-white" href="#">開發人員</a>
+          <a class="nav-link text-white" href="#">Cookies</a>
+          <a class="nav-link text-white" href="#">指南</a>
+          <a class="nav-link text-white" href="#">服務中心</a>
+          <a class="nav-link text-white" href="#">檢舉濫用</a>
+          <a class="nav-link text-white" href="#">繁體中文</a>
+          
+        </nav>
+
+        <nav class="nav ">
+          
+          <a class="nav-link text-white" href="#">Link</a>
+          <a class="nav-link text-white" href="#">Link</a>
+          <a class="nav-link text-white ms-auto" href="#">Link</a>
+          <a class="nav-link text-white" href="#">Link</a>
+
+          
+        </nav>
+      </div>
+    </footer>
+
+
+
+    <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- offcanvas -->
+      <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+          </div>
+          <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // 抓網址
+      // console.log(window.location.href);
+      // 抓 hash，去 # 字號
+      //console.log(window.location.hash.slice(1));
+      const cards = document.querySelectorAll("main .card");
+      console.log(cards);
+
+      const imgAry = [
+        "https://images.pexels.com/photos/17249145/pexels-photo-17249145.jpeg",
+        "https://images.pexels.com/photos/18526526/pexels-photo-18526526.jpeg",
+        "https://images.pexels.com/photos/19927175/pexels-photo-19927175.jpeg",
+        "https://images.pexels.com/photos/30238006/pexels-photo-30238006.jpeg"
+      ];
+
+      imgAry.forEach(function(url , i){
+        const node = document.createElement("img");
+        node.src = url;
+        node.className = "w-100 h-100 object-fit-cover";
+        cards[i].innerHTML = ""; //將原有的清空
+        cards[i].append(node); //再賦值
+        cards[i].classList.add("overflow-hidden","grad1");
+      });
+
+      handleHashChange();
+
+      window.addEventListener("hashchange", handleHashChange);
+      
+      function handleHashChange(){
+        // 傳統寫法
+        // let tag = window.location.hash;
+        // console.log(tag == "");
+        // if(tag == ""){
+        //   tag = "#item1"
+        // }
+        
+        // 看起來比較厲害的寫法
+        // 短路賦值
+        let tag = window.location.hash || "#item1";
+
+        // ? 保護語法
+        document.querySelector(".active")?.classList.remove("active");
+        document.querySelector(`a[href="${tag}"]`)?.classList.add("active");
+      }
+
+    </script>
+  </body>
+</html>
