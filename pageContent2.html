@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Flickr仿製</title>
+    <title>Flickr 照片輪播</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -93,164 +93,76 @@
       </div>
     </nav>
 
-    <!-- header -->
-    <header class="h250px bg-dark-subtle header-bg2 grad1">
-      <div
-        class="container h-100 d-flex gap-2 align-items-end pb-2 text-white z-1 position-relative"
-      >
-        <div class="img-head w100px h100px overflow-hidden rounded-circle">
-          <img
-            class="h100px w100px object-fit-cover"
-            src="https://randomuser.me/api/portraits/women/76.jpg"
-            alt=""
-          />
+    <header class="bg-dark h700px">
+      <div id="carouselExample" class="carousel slide w-100 h-100">
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="position-relative active" aria-current="true" aria-label="Slide 1">
+            <img
+              src="https://images.pexels.com/photos/29372969/pexels-photo-29372969.jpeg"
+              class="w30px h30px object-fit-cover position-absolute start-0 top-0"
+              alt="..."
+            />
+          </button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2" class="position-relative">
+            <img
+              src="https://images.pexels.com/photos/37768860/pexels-photo-37768860.jpeg"
+              class="w30px h30px object-fit-cover position-absolute start-0 top-0"
+              alt="..."
+            />
+          </button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3" class="position-relative">
+            <img
+              src="https://images.pexels.com/photos/16202422/pexels-photo-16202422.jpeg"
+              class="w30px h30px object-fit-cover position-absolute start-0 top-0"
+              alt="..."
+            />
+          </button>
         </div>
-        <div class="user-info">
-          <div class="name fs-1">Alice Jimenez</div>
-          <div class="info">
-            <i class="fa-solid fa-gift"></i><span> 贈送Pro</span>
+
+        <div class="carousel-inner w-100 h-100">
+          <div class="carousel-item active w-100 h-100">
+            <img
+              src="https://images.pexels.com/photos/29372969/pexels-photo-29372969.jpeg"
+              class="w-100 h-100 object-fit-contain"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item w-100 h-100">
+            <img
+              src="https://images.pexels.com/photos/37768860/pexels-photo-37768860.jpeg"
+              class="w-100 h-100 object-fit-contain"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item w-100 h-100">
+            <img
+              src="https://images.pexels.com/photos/16202422/pexels-photo-16202422.jpeg"
+              class="w-100 h-100 object-fit-contain"
+              alt="..."
+            />
           </div>
         </div>
-        <div class="num-photo ms-auto">25張相片</div>
-        <div class="num-year">已加入2013</div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </header>
-
-    <!-- 次導覽列 -->
-    <aside class="bg-white border-bottom sticky-top t50px">
-      <div class="container">
-        <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#item1">關於</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link active" href="#item2">所有相片</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#item3">相簿</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#item4">最愛 </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#item5">博覽館</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#item6">群組</a>
-          </li>
-        </ul>
-      </div>
-    </aside>
-
-    <main class="bg-body-tertiary">
-      <div class="container">
-        <div class="row">
-          <div class="d-flex justify-content-end mt-3">
-            <i class="fa-solid fa-magnifying-glass fs-3"></i>
-            <i class="fa-brands fa-square-youtube fs-3"></i>
-            <i class="fa-solid fa-share fs-3"></i>
-          </div>
-        </div>
-
-        <div class="row row-cols-4 g-2 my-2">
-          <div class="cols">
-            <div class="card h300px overflow-hidden">
-              <img
-                class="w-100 h-100 object-fit-cover"
-                src="https://images.pexels.com/photos/29372969/pexels-photo-29372969.jpeg"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="cols">
-            <div class="card h300px"></div>
-          </div>
-          <div class="cols">
-            <div class="card h300px"></div>
-          </div>
-          <div class="cols">
-            <div class="card h300px"></div>
-          </div>
-          <div class="cols">
-            <div class="card h300px">
-              <div class="card-body">
-                <!-- Button trigger modal -->
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                >
-                  Launch demo modal
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="cols">
-            <div class="card h300px">
-              <div class="card-body">
-                <button
-                  class="btn btn-primary"
-                  type="button"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#offcanvasExample"
-                  aria-controls="offcanvasExample"
-                >
-                  Button with data-bs-target
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="cols">
-            <div class="card h300px"></div>
-          </div>
-          <div class="cols">
-            <div class="card h300px"></div>
-          </div>
-          <div class="cols">
-            <div class="card h300px"></div>
-          </div>
-          <div class="cols">
-            <div class="card h300px"></div>
-          </div>
-          <div class="cols">
-            <div class="card h300px"></div>
-          </div>
-          <div class="cols">
-            <div class="card h300px"></div>
-          </div>
-          <div class="cols">
-            <div class="card h300px"></div>
-          </div>
-          <div class="cols">
-            <div class="card h300px"></div>
-          </div>
-          <div class="cols">
-            <div class="card h300px"></div>
-          </div>
-          <div class="cols">
-            <div class="card h300px"></div>
-          </div>
-          <div class="cols">
-            <div class="card h300px"></div>
-          </div>
-          <div class="cols">
-            <div class="card h300px"></div>
-          </div>
-          <div class="cols">
-            <div class="card h300px"></div>
-          </div>
-          <div class="cols">
-            <div class="card h300px"></div>
-          </div>
-        </div>
-      </div>
-    </main>
 
     <footer class="bg-dark">
       <div class="container">
@@ -276,127 +188,10 @@
       </div>
     </footer>
 
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">...</div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- offcanvas -->
-    <div
-      class="offcanvas offcanvas-bottom"
-      tabindex="-1"
-      id="offcanvasExample"
-      aria-labelledby="offcanvasExampleLabel"
-    >
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="offcanvas-body">
-        <div>
-          Some text as placeholder. In real life you can have the elements you
-          have chosen. Like, text, images, lists, etc.
-        </div>
-        <div class="dropdown mt-3">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            data-bs-toggle="dropdown"
-          >
-            Dropdown button
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-
-    <script>
-      // 抓網址
-      // console.log(window.location.href);
-      // 抓 hash，去 # 字號
-      //console.log(window.location.hash.slice(1));
-      const cards = document.querySelectorAll("main .card");
-      console.log(cards);
-
-      const imgAry = [
-        "https://images.pexels.com/photos/17249145/pexels-photo-17249145.jpeg",
-        "https://images.pexels.com/photos/18526526/pexels-photo-18526526.jpeg",
-        "https://images.pexels.com/photos/19927175/pexels-photo-19927175.jpeg",
-        "https://images.pexels.com/photos/30238006/pexels-photo-30238006.jpeg",
-      ];
-
-      imgAry.forEach(function (url, i) {
-        const node = document.createElement("img");
-        node.src = url;
-        node.className = "w-100 h-100 object-fit-cover";
-        cards[i].innerHTML = ""; //將原有的清空
-        cards[i].append(node); //再賦值
-        cards[i].classList.add("overflow-hidden", "grad1");
-      });
-
-      handleHashChange();
-
-      window.addEventListener("hashchange", handleHashChange);
-
-      function handleHashChange() {
-        // 傳統寫法
-        // let tag = window.location.hash;
-        // console.log(tag == "");
-        // if(tag == ""){
-        //   tag = "#item1"
-        // }
-
-        // 看起來比較厲害的寫法
-        // 短路賦值
-        let tag = window.location.hash || "#item1";
-
-        // ? 保護語法
-        document.querySelector(".active")?.classList.remove("active");
-        document.querySelector(`a[href="${tag}"]`)?.classList.add("active");
-      }
-    </script>
   </body>
 </html>
