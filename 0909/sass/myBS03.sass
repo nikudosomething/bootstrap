@@ -1,0 +1,38 @@
+// Custom.scss
+// Option B: 引入 Bootstrap 的部分模組
+
+// 1. 先引入 functions（這樣你可以操作顏色、SVG、calc 等）
+@import "../bootstrap/scss/functions"
+
+// 2. 在這裡覆寫預設變數
+
+// 3. 引入其餘必要的 Bootstrap 樣式（包含獨立的深色模式樣式）
+@import "../bootstrap/scss/variables"
+@import "../bootstrap/scss/variables-dark"
+
+// 4. 在這裡覆寫預設的 map
+$ben1: $orange-400
+$ben2: $indigo-400
+$mythemes: ("ben1": $ben1, "ben2": $ben2)
+
+$theme-colors: map-merge($theme-colors, $mythemes)
+//$theme-colors: ("primary": $primary, "secondary": $secondary, "success": $success, "info":$info, "warning": $warning, "danger": $danger, "light": $light, "dark":$dark,"ben1":$ben1)
+// 5. 引入其餘必要的核心部分
+@import "../bootstrap/scss/maps"
+@import "../bootstrap/scss/mixins"
+@import "../bootstrap/scss/root"
+
+// 6. 視需求引入其他可選的樣式模組；以下清單不是全部可用的樣式
+@import "../bootstrap/scss/utilities"
+@import "../bootstrap/scss/reboot"
+@import "../bootstrap/scss/type"
+@import "../bootstrap/scss/images"
+@import "../bootstrap/scss/containers"
+@import "../bootstrap/scss/grid"
+@import "../bootstrap/scss/helpers"
+@import "../bootstrap/scss/buttons"
+
+// 7. 最後可選擇引入 utilities API，依據 \`_utilities.scss\` 的 Sass map 產生工具類別
+@import "../bootstrap/scss/utilities/api"
+
+// 8. 在這裡加入額外的自訂程式碼

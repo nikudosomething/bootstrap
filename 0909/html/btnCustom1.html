@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CSS變數客製化</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <style>
+      .btn-primary {
+        --bs-btn-bg: #ff5722;
+        --bs-btn-border-color: #ff5722;
+        --bs-btn-hover-bg: #e64a19;
+        --bs-btn-hover-border-color: #e64a19;
+      }
+
+      .btn-ouo {
+        --bs-btn-color: #fff;
+        --bs-btn-bg: #06ccbc;
+        --bs-btn-border-color: #068079;
+        --bs-btn-hover-color: #032d3a;
+        --bs-btn-hover-bg: #47eaff;
+        --bs-btn-hover-border-color: #14c4ca;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container p-5">
+      <div class="btn btn-primary">測試</div>
+      <div class="btn btn-ouo">測試</div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" > </script>
+  </body>
+</html>
